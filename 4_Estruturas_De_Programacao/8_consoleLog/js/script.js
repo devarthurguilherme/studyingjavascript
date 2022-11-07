@@ -1,0 +1,1 @@
+console.log("Eu imprimo no console!");
