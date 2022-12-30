@@ -4,7 +4,6 @@ for(let i = 10; i > 0; i = i - 1){
         console.log("Caiu no continue");
         continue;
     }
-
     console.log(i)
 
 }
