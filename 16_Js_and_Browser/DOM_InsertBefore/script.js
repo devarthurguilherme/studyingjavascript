@@ -21,3 +21,27 @@ fatherElement.insertBefore(newElement, reference);
 fatherElement.insertBefore(newElement2, newElement);
 fatherElement.appendChild(lastElement);
 fatherElement.replaceChild(newSon, reference);
+
+console.log("___Creating Nodes____");
+let myName = document.createTextNode("Arthur Guilherme");
+let p = document.querySelector("#pHere");
+p.appendChild(myName);
+
+console.log("___Creating Elements____");
+let container2 = document.querySelector(".container2");
+let btn = document.querySelector("#btn");
+let list = document.createElement("ul");
+
+
+container2.appendChild(list);
+btn.addEventListener("click", () => {
+    for(i = 0; i < 5; i++) {
+        console.log(i);
+        let itemList = document.createElement("li");
+        let textList = document.createTextNode("Text List" + i);
+        list.appendChild(itemList);
+        itemList.appendChild(textList);
+    };
+});
+
+console.log("___Setting and Getting Attributes____");
