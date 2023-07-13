@@ -45,3 +45,36 @@ btn.addEventListener("click", () => {
 });
 
 console.log("___Setting and Getting Attributes____");
+let link = document.querySelector("#link");
+console.log(link.getAttribute("href"));
+
+link.setAttribute("href", "https://arthurguilherme.com/");
+console.log(link.getAttribute("href"));
+
+console.log("___Setting Height and Width of the Elements with DOM____");
+let container3 = document.querySelector(".container3");
+let btnSetContainer= document.querySelector("#btnSetContainer");
+
+console.log(container3.offsetWidth);
+console.log(container3.offsetHeight);
+console.log(container3.clientWidth);
+console.log(container3.clientHeight);
+
+
+console.log("___Positions of the Elements____");
+console.log(container3.getBoundingClientRect());
+
+console.log("___Setting CSS with Javascript____");
+btnSetContainer.addEventListener("click", () => {
+    container3.style.backgroundColor = "red";
+    container3.style.transition = ".8s";
+    container3.style.width = "200px";
+    container3.style.height = "200px";
+});
+
+console.log("___Query Selectos All____");
+let greenItems = document.querySelectorAll(".green-items");
+console.log(greenItems);
+greenItems[2].style.backgroundColor = "orange";
+greenItems[3].style.backgroundColor = "pink";
+greenItems[3].style.fontSize = "20px";
