@@ -7,3 +7,9 @@ let bus = {
 console.log(bus.wheels);
 console.log(bus.maxPassenger);
 console.log(bus.doors);
+
+bus.glassWindow = 20;
+delete bus.doors;
+
+console.log(bus.glassWindow)
+console.log(bus)

@@ -9,3 +9,6 @@ p.then((value) => {console.log(`The value is ${value}`)});
 
 p.then((value) => {return (value + 8)})
 .then((value) => {console.log(`Promise now has the value of ${value}`)});
+
+
+console.log("______Fail Promises _______");
